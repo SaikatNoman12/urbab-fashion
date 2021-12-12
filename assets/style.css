@@ -1,0 +1,403 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+section{
+	width: 100%;
+	height: 1000px;
+	background: red;
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	background: white;
+}
+
+.container{
+	width: 100%;
+	height: 100vh;
+	background-image: url(./image/background.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100vh;
+	background-position: center;
+	padding-left: 5%;
+	padding-right: 5%;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.navbar{
+	width: 100%;
+	height: 15vh;
+	display: flex;
+	align-items: center;
+}
+
+.logo{
+	width: 160px;
+	cursor: pointer;
+	animation-name: movedown;
+	animation-timing-function: linear;
+	animation-duration: 1s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+	animation-delay: .9s;
+
+}
+
+@keyframes movedown{
+	0%{
+		transform: translateY(-100px) ;
+		visibility: visible;
+
+
+	}
+
+	100%{
+		transform: translateY(0px) scale(1.0);
+		visibility: visible;
+
+	}
+}
+
+.cart{
+	width: 40px;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	padding: 0 5% 0 0;
+	animation-name: movedown;
+	animation-timing-function: linear;
+	animation-duration: 1s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+	animation-delay: 2.6s;
+}
+nav{
+	flex: ;
+	padding-left: 60px;
+	animation-name: movedown;
+	animation-timing-function: linear;
+	animation-duration: 1s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+	animation-delay: 1.8s;
+}
+
+nav ul{
+	display: flex;
+}
+
+nav  ul:hover a{
+	color: #CCCCCC;
+	filter: blur(.4px);
+	transition: .2s;
+}
+
+nav li{
+	margin: 0px 20px;
+	list-style: none;
+}
+
+
+nav li a:hover{
+	color: black;
+	filter: blur(0);
+}
+
+nav li a{
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 600;
+	color: #333;
+}
+
+
+.content h1{
+	font-size: 60px;
+	font-weight: 400;
+	margin: 24px 0px 15px 0px;
+	color: #232d;
+	animation-name: headdown;
+	animation-timing-function: linear;
+	animation-duration: .8s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+
+
+}
+
+@keyframes headdown{
+	0%{
+
+		transform: translateY(40px) rotateX(-45deg) ;
+		visibility: visible;
+		opacity: 0;
+		
+		
+	}
+
+	100%{
+		transform: translateY(0) rotateX(0deg) ;
+		visibility: visible;
+		
+	}
+}
+
+.break{
+	animation-name: breakddown;
+	animation-timing-function: linear;
+	animation-duration:.10s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@keyframes breakddown{
+	0%{
+
+		transform: translateY(40px) rotateX(-45deg) ;
+		visibility: visible;
+		opacity:0 ;
+
+		
+		
+	}
+
+	100%{
+		transform: translateY(0) rotateX(0deg) ;
+		visibility: visible;
+		
+	}
+}
+
+.content p{
+	font-size: 20px;
+	font-weight: 100;
+	color: #6a7199;
+	animation-name: paradown;
+	animation-timing-function: linear;
+	animation-duration:1s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+	
+}
+
+
+@keyframes paradown{
+	0%{
+
+		transform: translateY(40px) rotateX(-45deg) ;
+		visibility: visible;
+		opacity: 0;
+		
+		
+	}
+
+	100%{
+		transform: translateY(0) rotate(0deg) ;
+		visibility: visible;
+		
+	}
+}
+.content{
+	margin: 10% 0 0 10%;
+	page-break-inside: absolute;
+
+
+
+}
+
+.content .btn{
+	display: flex;
+	width: 160px;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	font-weight: 400;
+	background: linear-gradient(45deg , #87adfe , #ff77cd);
+	border-radius: 6px;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #fff;
+	box-shadow: 3px 8px 22px rgba(94 , 28 , 68 , 0.15);
+	animation-name: btn;
+	animation-timing-function: linear;
+	animation-duration:2s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+
+
+}
+
+@keyframes btn{
+	0%{
+		opacity: 0;
+		visibility: visible;
+
+
+	}
+
+
+	100%{
+		opacity: 1;
+		visibility: visible;
+
+	}
+}
+
+
+.first{
+	margin: auto;
+	animation-name: movdown;
+	animation-timing-function: linear;
+	animation-duration: .6s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+	position: absolute;
+	font-size: 16px;
+	font-weight: 400;
+	
+
+}
+@keyframes movdown{
+	0%{
+
+		transform: translateY(40px) rotateX(-60deg) ;
+		visibility: visible;
+		opacity: ;
+		
+		
+	}
+
+	100%{
+		transform: translateY(0) rotate(0deg) ;
+		visibility: visible;
+		
+	}
+}
+
+.arrows-icons{
+	display: flex;
+	margin: 40px 0 0 0;
+	/*animation-name: arrowdown;
+	animation-timing-function: linear;
+	animation-duration: 1.4s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;*/
+}
+@keyframes arrowdown{
+	0%{
+
+		transform: translateY(30px) rotateX(-45deg) ;
+		visibility: visible;
+		opacity: 0;
+		
+		
+	}
+
+	100%{
+		transform: translateY(0) rotate(0deg) ;
+		visibility: visible;
+		
+	}
+}
+.arrows-icons img{
+	width: 40px;
+	margin: 0 25px 0 0;
+	cursor: pointer;
+
+	animation-name: arrowdown;
+	animation-timing-function: linear;
+	animation-duration: 1.2s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+.img{
+	height: 90%;
+	position: absolute;
+	bottom: 0;
+	right: 120px;
+	animation-name: imgflow;
+	animation-timing-function: linear;
+	animation-duration: 2s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+	animation-direction: alternate;
+}
+
+@keyframes imgflow{
+	0%{
+		opacity: 0;
+		visibility: visible;
+
+
+	}
+
+
+	100%{
+		opacity: 1;
+		visibility: visible;
+
+	}
+}
+
+.social-links{
+	transform: rotate(-90deg);
+	position: absolute;
+	left: -120px;
+	bottom: 260px;
+	animation-name: updown;
+	animation-timing-function: linear;
+	animation-duration: 2s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+}
+
+@keyframes updown{
+	0%{
+		transform: translateY(300px) rotate(-90deg) ;
+		visibility: visible;
+		opacity: 0;
+
+
+	}
+
+	100%{
+		transform: translateY(0px) rotate(-90deg);
+		visibility: visible;
+
+	}
+}
+.social-links a{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 0 20px 0 0;
+	color: #6a7199;
+}
+
+
